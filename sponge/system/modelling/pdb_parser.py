@@ -109,9 +109,6 @@ def _read_pdb(pdb_name, rebuild_hydrogen=False, remove_hydrogen=False):
             atom_group.append(atom_name)
             crd_group.append(crd)
 
-    atom_names.append(atom_group)
-    crds.append(crd_group)
-
     flatten_atoms = np.array(flatten_atoms, np.str_)
     flatten_crds = np.array(flatten_crds, np.float32)
     init_res_names = np.array(init_res_names)
